@@ -11,12 +11,10 @@ const router = Router();
 
 router.get('/', (req, res, next) => {
   const { query } = req;
-  const { lat, lon } = query;
 
   axios.get('https://api.openweathermap.org/data/2.5/onecall', {
     params: {
-      lat,
-      lon,
+      ...query,
       appid: process.env.OPEN_WEATHER_KEY,
       exclude: 'minutely',
     },
