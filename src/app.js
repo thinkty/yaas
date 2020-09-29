@@ -38,6 +38,6 @@ app.use((err, req, res, next) => {
     res.sendStatus(500);
   }
 });
-app.use(router);
+app.use('/api', router);
 
 app.listen(port, logger.info(`Listening on port: ${port}`));
