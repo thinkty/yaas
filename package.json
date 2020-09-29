@@ -1,7 +1,7 @@
 {
-  "name": "express",
+  "name": "yaas",
   "version": "1.0.0",
-  "description": "A template server with logging and testing enabled",
+  "description": "Yet Another API Server",
   "main": "app.js",
   "scripts": {
     "start": "./node_modules/.bin/nodemon src/app.js",
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thinkty/express.git"
+    "url": "git+https://github.com/thinkty/yaas.git"
   },
   "author": "Tae Yoon Kim",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thinkty/express/issues"
+    "url": "https://github.com/thinkty/yaas/issues"
   },
-  "homepage": "https://github.com/thinkty/express",
+  "homepage": "https://github.com/thinkty/yaas",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
