@@ -4,8 +4,8 @@
  * @see https://github.com/thinkty/yaas
  */
 const { Router } = require('express');
-const logger = require('../utils/logger');
 const axios = require('axios').default;
+const logger = require('../utils/logger');
 
 const router = Router();
 

@@ -2,7 +2,7 @@
  * This module defines the basic routes for the server's APIs
  * [GET]
  * - / : send 200 status
- * - /weather : 
+ * - /weather :
  *
  * [POST]
  * -
