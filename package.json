@@ -1,0 +1,48 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "A template server with logging and testing enabled",
+  "main": "app.js",
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon src/app.js",
+    "test": "NODE_ENV=test ./node_modules/.bin/jest",
+    "test:cov": "NODE_ENV=test ./node_modules/.bin/jest --coverage",
+    "test:watch": "NODE_ENV=test ./node_modules/.bin/jest --watch",
+    "test:watchall": "NODE_ENV=test ./node_modules/.bin/jest --watchAll",
+    "test:leaks": "NODE_ENV=test ./node_modules/.bin/jest --runInBand --detectOpenHandles",
+    "lint": "./node_modules/.bin/eslint src/",
+    "lint:fix": "./node_modules/.bin/eslint --fix src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinkty/express.git"
+  },
+  "author": "Tae Yoon Kim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thinkty/express/issues"
+  },
+  "homepage": "https://github.com/thinkty/express",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
