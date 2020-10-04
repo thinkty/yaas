@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "./node_modules/.bin/nodemon src/app.js",
+    "launch": "pm2 start src/app.js",
     "test": "NODE_ENV=test ./node_modules/.bin/jest",
     "test:cov": "NODE_ENV=test ./node_modules/.bin/jest --coverage",
     "test:watch": "NODE_ENV=test ./node_modules/.bin/jest --watch",
